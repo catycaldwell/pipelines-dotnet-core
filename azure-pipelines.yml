@@ -17,7 +17,7 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 
-  - task: Visual Studio IntelliCode Team Model Training@0
+- task: Visual Studio IntelliCode Team Model Training@0
   inputs:
     branch: 'master'
     intelliCodeServiceEndpoint: 'IntelliCode'
